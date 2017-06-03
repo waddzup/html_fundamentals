@@ -1,0 +1,40 @@
+
+meta tag
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    ...
+  </head>
+</html>
+
+The meta declaration belongs inside the <head> element, and should be specified within the first 1024 bytes of your page. So the earlier it is mentioned in your code, the better. 
+
+W3C recommends placing it immediately after the opening <head> tag:
+
+Can also use
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+but it is more complicated and not recommended
+
+Character set is collection of characters, character <-> code point, code point <-> bytes
+
+HTML Character References
+
+Symbol					Entity 		Name	Entity Number	Usage
+Less than '<'			&lt;				&#60;			Div tag: &lt;div>
+Greater than '>'		&gt;				&#62;			Div tag: &lt;div&gt;
+Ampersand '&'			&amp;				&#38;			Tom &amp; Jerry
+Non breaking space ' ' 	&nbsp;				&#160;			If you add multiple spaces, the browser will remove all but one. So you have to use this entity to add multiple spaces in your HTML page.
+Quotes "				&quot;				&#34;			Link to a another section on the same page using id of the element: &lt;a href=&quot;&num;timetable&quot;&gt;Displayed as: <a href="#timetable"> &quot; is generally encouraged for code. For an actual quotation, <q> or <blockquote> is preferred. 
+
+If you are using a decimal number, use an ampersand symbol '&' , followed by the symbol '#', then a decimal number and a semi-colon. &#160;
+If you are using a hexadecimal number, use an ampersand symbol '&' , followed by the symbols '#x', then a hexadecimal number and a semi-colon. &#x00A0
+
+Table of character references
+https://dev.w3.org/html5/html-author/charref
+Using escapes in markup and css
+https://www.w3.org/International/questions/qa-escapes
+
+
+
