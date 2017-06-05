@@ -1,0 +1,36 @@
+Activity 1.5 Compare and contrast these two different HTML Style Guides:
+
+jQuery - https://contribute.jquery.org/style-guide/html/
+Google - https://google.github.io/styleguide/htmlcssguide.html
+
+Both were interesting especially the right and wrong examples. The bits the course has not covered so far were somewhat confusing (what is a TODO?). The jQuery guide was the more readable I found.
+
+Google gave more detail e.g. always specify the protocal in src attributes (preferably https://), stuff about CSS, the use of hexadecimal, units....
+
+Comments
+Google mentions comments as optional. jQuery is quite specific in the layout - Capital first letter, must be a single space between comment token and first character of comment....
+
+Agreeing points
+Remove unnecessary whitespace
+use utf-8 charset
+use lowercase for names for elements and attributes
+check the html syntax. Google suggest w3C validator, jQuery grunt htmllint
+Always use alt attibute for images to help the visually impaired
+Both recommend the separation of concerns - splitting html, css and JavaScript
+
+Contradictory points:
+
+Optional tags
+Google suggest not to close optional closing tags (they say the rule is optional - tee hee) whereas jquery and this course say put them in. This includes not using <head> and <body> even closing</p>
+
+Indentation
+Google use 2 spaces never tabs
+jQuery indent using tabs
+
+w3schools has an html5 style guide and coding convention. It covers many of the points in the Google and jQuery with slight differences e.g. prefernce to make the html as simmilar to xhtml as possible. 
+
+w3 Validator
+I tried direct input for a simple web page I am working on  - I had missed an alt attribute for one of the images. I also tried my company website - there were some missing alt attributes on images and then some errors i did not understand e.g. Attribute ng-show not allowed on element a at this point. And the border attribute is obsolete.
+
+
+
