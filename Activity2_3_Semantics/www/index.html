@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mathematical Musings To Demonstrate Semantic Markup</title>       
+</head>
+<body>
+    <header>
+    <!-- Activity 2.3 
+         - How are <header> and <h1> related?
+           They are only related in that they help to structure an html page.
+           <header> is a container for introductory content including:
+           Authorship information, one or more <h1>..<h6> tags and a logo
+           or icon. There can be more than one <header> on a page if 
+           introductory information is required for multiple sections of the
+           page.
+           <h1>..<h6> identify headings in content. <h1> is the most
+           important <h6> the least important. They can be used by
+           screen readers announce the text and its level and to navigate the
+           content.
+           <header> cannot be used inside <footer> however, <h1>..<h6>
+           can be used in both <header> and <footer>
+         - Create a well structured html page using as many semantic
+           elements as you can
+         - Write a short html page using <div> and <span> tags
+     -->
+        <h1>Activity 2.3 HTML5 Semantics</h1>
+        <p>An exercise in HTML5 semantic tags using some trivia from the world of
+            mathematics</p>
+        
+        <nav>
+            <div class="contents-1">
+            <ol>
+                <li><a href="#primes"> Prime Numbers</a></li>
+                <li><a href="#twos"> Powers of Two</a></li>
+                </ol>
+            </div>
+        </nav>
+    </header>
+    
+
+<!-- Prime numbers-->
+<article id="primes">
+    <header>
+        <p>Some prime stuff</p>
+    </header>
+    <footer>Written by Indivisible</footer>
+</article>    
+
+<!-- Powers of Two -->
+<article id="twos">
+    <header>
+        <p>Some even stuff</p>
+    </header>
+    <footer>Written by Even Steven</footer>
+</article>    
+    
+<footer>
+    <hr>
+<p>© 2017 Chris Primeman </p>
+<details>
+    <summary>Contact</summary>
+    <p>t: +02 357111317</p>
+    <p>m: <a href="mailto:indivisible@nofactors.com">indivisible@nofactors.com</a></p>
+</details>
+</footer>
+</body>
+</html>
