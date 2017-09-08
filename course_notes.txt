@@ -37,4 +37,78 @@ Using escapes in markup and css
 https://www.w3.org/International/questions/qa-escapes
 
 
+<blockquote> - If you want to quote a larger passage, you may want to use blockquote
 
+<q> - The q tag is for quotes.  This has no relationship to the somewhat confusing single and double quote characters, rather it's used when you want to quote a person or written work in your web page
+
+<pre> - This is another tag that helps you break the white space rule.  PRE stands for "PREformatted text", meaning "I've set this up just the way I want it, don't mess with it."
+<br> - This one signifies a line break.
+
+<hr> - This one might be debatable.  HR originally stood for "Horizontal Rule", i.e. a horizontal line across the width of the text.  It's still there in HTML5, but now is officially supposed to represent a "thematic break" in the content.
+
+Reference Websites
+caniuse.com  	for browser compatibility
+https://www.w3.org/WAI/tutorials/page-structure/headings/    the use of <h1>, <h2> etc
+tutorialzine.com  templates responsive
+
+<mark>
+  <p>Yes sir.
+    [<mark>Handing his master the sandwiches on a salver</mark>]
+  </p>
+  
+ Yellow highlight
+ 
+ <figure> and <figcaption>
+ 
+ <figure>
+   <img src="img_cast.jpg" alt="The Importance of Being Earnest Cast">
+   <figcaption>Fig1. - The cast hard at work at dress rehearsal before opening night</figcaption>
+</figure>
+
+
+You can have more than one <header>, <footer> or <nav> on a pageMultiple headers & footers
+
+Header and footer elements are for the parent element (section, article, division or body) that they are used in. If you have multiple sections or articles, then you can have one header and footer for each.
+
+
+<span> and <div>
+When can <span> be used?
+
+To add styling to part of a sentence (inline)
+Manipulate part of a sentence using JavaScript
+When no other HTML element is applicable, you can use <span> (and <div>) to add attributes such as class and id
+<p>Hi everyone! My name is Alexa and I work for <span class="company">ABC Company</span></p>
+  
+  <div> is at the block level 
+  <div class="code">
+    <ol>
+      <li>Line of code</li>
+      <li>Line of code</li>
+    </ol>
+  </div>
+
+Difference between <div> and <span>
+***********************************
+They are both considered generic elements that don't have any meaning. But <div> is a block level element while <span> is an inline element. 
+
+Block level elements - used within body of the page. It occupies a block of space and starts in a new line. It usually has an empty line above and below the block. They can contain inline elements and other block level elements. Other examples: <p>, <h1> - <h6>.
+
+Inline elements - as the name suggests are 'in-the-line'. They can start anywhere in a line. They can only contain data (like text) or other in-line elements. Other examples: <em>, <strong>.
+
+Note: There are several other semantic inline elements such as <abbr>, <cite> and <code> that should be used when possible instead of <span>.
+
+Why two paragraph tags don't work
+*********************************
+
+In the first <span> example, we said using two paragraph tags was invalid HTML.
+
+<p>Hi everyone! My name is Alexa and I work for <p class="company">ABC Company</p></p>
+After an opening tag <p>, if it sees another <p> or any other block level element including <div>, it will automatically close the first open <p> for you. Nesting one paragraph tag in another is not valid because the browser will consider them as two paragraphs one after the other. Even though you close the paragraphs with two closing tags </p></p> at the end, they are ignored as errors.
+
+
+Images
+******
+The alt attribute is meant to be an alternate source of information while the title attribute should provide additional information about the image.
+Note: For images, you must use an alt attribute as there is no guarantee that the title attribute is presented to assistive technology users. The title attribute should not be relied upon for important information, and it should not be used in place of the alt attribute
+
+Resizing specifying width and height : you don't need to define both width and height. You can just specify either height or width and the aspect ratio will be adjusted. 
